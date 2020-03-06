@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+
+}
+
+
+.app-container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-image: url('./images/bg.png');
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 45px;
+}
+.list-con{
+  position: relative;
+  width: 700px;
+  height: 480px;
+  bottom: 55px;
+  margin-top: 200px;
+  overflow: hidden;
+}
+.list-container{
+  width: 700px;
+  position: absolute;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+.list-animate{
+  animation: rotateItem 10s linear infinite;
+}
+
+.list-item-con{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+
+}
+.list-item{
+  flex: 1;
+  line-height: 60px;
+}
+
+.color-green{
+  color:yellowgreen
+}
+.color-blue{
+  color: blue;
+}
+
+@keyframes rotateItem {
+  0% { top: 0; }
+  50% {top:-50%}
+  100% { top: -100%;}
+}
